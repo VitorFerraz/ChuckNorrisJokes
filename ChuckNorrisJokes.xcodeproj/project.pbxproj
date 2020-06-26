@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -165,7 +165,6 @@
 				5628B2CC0952DA51C00365B7 /* Pods-ChuckNorrisJokesTests.debug.xcconfig */,
 				271DBED92A857C7193093DC6 /* Pods-ChuckNorrisJokesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -177,6 +176,7 @@
 			buildConfigurationList = 903FE0C524A68F65009BA1FA /* Build configuration list for PBXNativeTarget "ChuckNorrisJokes" */;
 			buildPhases = (
 				4520725584AC70F4825D8A4E /* [CP] Check Pods Manifest.lock */,
+				13DD0D3824A692DF00ACB90B /* SwiftLint Script */,
 				903FE09724A68F5D009BA1FA /* Sources */,
 				903FE09824A68F5D009BA1FA /* Frameworks */,
 				903FE09924A68F5D009BA1FA /* Resources */,
@@ -300,6 +300,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13DD0D3824A692DF00ACB90B /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect\n";
+		};
 		4520725584AC70F4825D8A4E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
